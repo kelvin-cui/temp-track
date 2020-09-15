@@ -1,7 +1,7 @@
 # temp-track
 Temp-track is a IOT temperature sensor designed for use in the transition back to office during the pandemic. Created as a summer stretch project for Cisco, Temp-track allows for custom API intergrations with it's Wifi capabilities, and features the work of Tyler Patel, Tara Rafi, Olivia Xia, Michael Fitzgerald and Kelvin Cui.
 
-<img src="https://i.ibb.co/jgz4XWd/119201774-2361574930805525-7836454270811013929-n.jpg" alt="covid-19" border="0">
+<img src="https://i.ibb.co/c87WQjq/119201774-2361574930805525-7836454270811013929-n.jpg" alt="covid-19" border="0"  style="border-radius: 50%">
 
 ## Background info
 With the advent of the Coronavirus, the entire world shifted to working from home, in an effort to limit the possibilities of infection. COVID-19 is highly contagious, and the current best way to prevent infection is through screening. An obvious symptom of COVID-19 is a fever, with a raised internal temperature. Temperature-based screening is the most common solution right now to quickly screen people before they are allowed entry, often seen at storefronts and airports. Since COVID-19 is easily transmitted through bodily fluids, the FDA recommends "telethermographic temperature sensors", or temperature sensors that can assess skin temperature remotely. 
@@ -20,6 +20,7 @@ We believe that our solution features the best of both currently popular solutio
 
 ## How it works
 <img src="https://i.ibb.co/FbZ2crr/covid.jpg" alt="covid" border="0">
+
 ## Hardware
 The hardware is based on an Arduino Nano, as well as an ESP-01 Wifi Chip. The temperature is recorded using the Medical Grade MLX90614 IR Sensor, allowing for 0.2 degrees celcius variance. When the button is pressed, the temperature is recorded, and then sent over Wifi to a server of your choice. If the temperature is below 38 degrees celcius, then a green light flashes, indicating a pass for the screening. Conversely, if the temperature is above 38, then a red light flashes. Our current example is set up to send the temperature info to our Node Red Server through a GET call, which brings us into...
 
