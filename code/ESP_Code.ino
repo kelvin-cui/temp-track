@@ -15,8 +15,8 @@ int led = 1;
 
 
 //-----------------------BASIC WIFI SETTINGS-------------------------//
-const char* ssid = "BELL255_EXT"; //Change to reflect local network
-const char* password = "767AF6D6";   //Ditto
+const char* ssid = "SSID"; //Change to reflect local network
+const char* password = "YOURPASS";   //Ditto
 
 const char* host = "api.thingspeak.com"; //Domain to Server
 const char* path = "/update?api_key=PO0IANZGAXMFCJMV&field1="; //Path of Server
