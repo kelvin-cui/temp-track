@@ -36,3 +36,6 @@ An example workflow for any office with Cisco routers could be the following. An
 ## Lessons Learned
 This was a very educational project, and there are a few things that we'd do differently in the future. In terms of hardware, instead of using an Arduino Nano and ESP-01, an ESP-32 is a single board that accomplishes the same thing, with less cost. Using the ESP-32 would also allow us to power the device using a Li-Po, making the device standalone instead of having to be powered over USB. The ESP-32 also has a deep-sleep mode, so that it would only draw power when the button is clicked, allowing long battery life. Furthermore, some ESP-32s feature a built-in OLED screen, which would allow for a display of the actual temperature. In terms of the server, instead of sending API calls directly to Node Red, we'd set up a MQTT server that would act as a bridge between the two to allow for more efficent communications.
 
+## File Guide
+The CAD files for the housing are featured in the CAD folder. Both a .stl and .sldprt version exists, either for direct 3D printing or modification through solidworks respectively.
+The Arduino and ESP Files are found in the Code folder, and a wiring Schematic.png is present to show how everything is wired together.
