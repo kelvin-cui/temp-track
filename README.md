@@ -1,7 +1,7 @@
 # temp-track
 Temp-track is a IOT temperature sensor designed for use in the transition back to office during the pandemic. Created as a summer stretch project for Cisco, Temp-track allows for custom API intergrations with it's Wifi capabilities, and features the work of Tyler Patel, Tara Rafi, Olivia Xia, Michael Fitzgerald and Kelvin Cui.
 
-<img src="https://i.ibb.co/FbZ2crr/covid.jpg" alt="covid" border="0">
+<img src="https://i.ibb.co/jgz4XWd/119201774-2361574930805525-7836454270811013929-n.jpg" alt="covid-19" border="0">
 
 ## Background info
 With the advent of the Coronavirus, the entire world shifted to working from home, in an effort to limit the possibilities of infection. COVID-19 is highly contagious, and the current best way to prevent infection is through screening. An obvious symptom of COVID-19 is a fever, with a raised internal temperature. Temperature-based screening is the most common solution right now to quickly screen people before they are allowed entry, often seen at storefronts and airports. Since COVID-19 is easily transmitted through bodily fluids, the FDA recommends "telethermographic temperature sensors", or temperature sensors that can assess skin temperature remotely. 
@@ -9,17 +9,17 @@ With the advent of the Coronavirus, the entire world shifted to working from hom
 ### Existing Solutions
 There are two popular solutions that currently exist for this purpose : simple IR sensor-based forehead thermometers, and advanced IR camera-based screening stations.
 
-<img src="https://i5.walmartimages.com/asr/cf1244e1-c9be-4a1f-a942-5abf91fb68e5.a9cd36071ce4695b630caee80f58c265.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff" alt="covid" border="0">
+<img src="https://i5.walmartimages.com/asr/cf1244e1-c9be-4a1f-a942-5abf91fb68e5.a9cd36071ce4695b630caee80f58c265.jpeg?odnHeight=450&odnWidth=450&odnBg=ffffff" alt="covid" border="0" style="max-height:200px">
 The point-and-shoot forehead thermometers are simple to use, but they can be very inaccurate, often featuring a variance of 0.5 degrees celcius. They're also standalone units, and allows for zero intergration.
 
-<img src="https://www.lastmilegear.com/wp-content/uploads/Seek-YW-AAA-300x300.jpg" alt="covid" border="0">
+<img src="https://www.lastmilegear.com/wp-content/uploads/Seek-YW-AAA-300x300.jpg" alt="covid" border="0" style="max-height:200px">
 The camera-based screening stations meanwhile are quite advanced, featuring a variance of 0.3 degrees celcius, and allow for intergrations. However, they are very expensive, are difficult to operate, and take up a lot of space.
 
 ## Proposed Solution
 We believe that our solution features the best of both currently popular solutions. It features the ease of use of the forehead thermometers, while maintaining the accuracy of the IR cameras with it's medical grade IR Sensor. It also features an ESP-01 Chip, allowing for custom API intergrations, and best of all, costs the same on average as the forehead thermometers.
 
 ## How it works
-
+<img src="https://i.ibb.co/FbZ2crr/covid.jpg" alt="covid" border="0">
 ## Hardware
 The hardware is based on an Arduino Nano, as well as an ESP-01 Wifi Chip. The temperature is recorded using the Medical Grade MLX90614 IR Sensor, allowing for 0.2 degrees celcius variance. When the button is pressed, the temperature is recorded, and then sent over Wifi to a server of your choice. If the temperature is below 38 degrees celcius, then a green light flashes, indicating a pass for the screening. Conversely, if the temperature is above 38, then a red light flashes. Our current example is set up to send the temperature info to our Node Red Server through a GET call, which brings us into...
 
